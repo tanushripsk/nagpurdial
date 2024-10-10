@@ -23,7 +23,7 @@ const Otp = () => {
         {
           size: "invisible",
           callback: () => onSignup(),
-          "expired-callback": () => {},
+          "expired-callback": () => { },
         },
         auth
       );
@@ -75,7 +75,7 @@ const Otp = () => {
           <Toaster toastOptions={{ duration: 4000 }} />
           <div id="recaptcha-container"></div>
           <h5 style={{ fontFamily: "Times New Roman" }}>
-           Contact For FreeListing On NagpurDial
+            Contact For FreeListing On NagpurDial
           </h5>
           {user ? (
             <ImageForm number={ph} />
